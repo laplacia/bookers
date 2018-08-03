@@ -1,0 +1,62 @@
+header {
+  font-family: verdana,arial,helvetica,sanserif;
+}
+
+main {
+  padding-left: 24px;
+  font-family: verdana,arial,helvetica,sanserif;
+}
+h1 {
+  font-size: 25px;
+}
+h4 {
+  font-size: 13px;
+  font-weight: 100;
+  margin-bottom: 0px;
+}
+header {
+  padding-left: 24px;
+  margin-bottom: 3px;
+}
+th, tr {
+  height:30px;
+}
+
+[class^="show_"], [class^="edit_"], [class^="destroy_"] {
+  color: black;
+  font-size:13px;
+}
+[class^="show_"]:hover, [class^="edit_"]:hover, [class^="destroy_"]:hover {
+  background: black;
+  color: white;
+}
+
+.books-box {
+
+}
+.record {
+
+}
+.theme {
+  font-size: 13px;
+
+}
+.data {
+  font-size: 12px;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
