@@ -4,9 +4,7 @@
       <h4>Body</h4>
         <%= f.text_area :impression, class: "book_body" %>
         <%= f.submit %>
-
     <% end %>
-
 
       <%= link_to "show", book_path(@book) class: "show_@book.id" %>
       <%= link_to "back", books_path, class: "back" %>

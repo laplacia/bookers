@@ -26,11 +26,13 @@ class BooksController < ApplicationController
       render action: :index
     end
   end
+
   def destroy
     book = Book.find(params[:id])
     book.destroy
     redirect_to books_path
   end
+
   def success
     @book = Book.find(params[:id])
 
