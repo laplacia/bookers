@@ -1,0 +1,9 @@
+<p>Successfully registered</p>
+  <h3>Title:</h3>
+    <%= @book.title %>
+  <h3>Body:</h3>
+    <%= @book.impression %>
+  <%= link_to "edit", edit_book_path(@book.id), class: "show_@book.id" %>
+  <%= link_to "back", books_path, class: "back" %>
+
+

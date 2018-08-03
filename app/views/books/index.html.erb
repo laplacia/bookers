@@ -1,0 +1,39 @@
+<header>
+  <h1 class="header">Books</h1>
+</header>
+<main>
+  <table class=books-box>
+    <tr class="record">
+      <th class="theme">Title</th>
+      <th class="theme">Body</th>
+    </tr>
+      <% @books.each do |book| %>
+    <tr>
+      <td class="data"><%= book.title %></td>
+      <td class="data"><%= book.impression %></td>
+      <td>
+        <%= link_to "show", book_path(book.id), class: "show_#{book.id}" %>
+      </td>
+      <td>
+        <%= link_to "edit", edit_book_path(book.id), class: "edit_#{book.id}" %>
+      </td>
+      <td>
+        <%= link_to "destroy", destroy_book_path(book.id), method: :delete, class: "destroy_#{book.id}" %>
+      </td>
+    </tr>
+      <% end %>
+  </table>
+
+  <h2 class="new">New book</h2>
+    <%= form_for(@book) do |f| %>
+      <h4>Title</h4>
+        <%= f.text_field :title, class: "book_title" %>
+      <h4>Body</h4>
+        <%= f.text_area :impression, class: "book_body" %>
+        <div class= "submit" >
+         <%= f.submit %>
+        </div>
+    <% end %>
+
+
+</main>
