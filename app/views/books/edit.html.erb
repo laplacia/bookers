@@ -6,5 +6,5 @@
         <%= f.submit %>
     <% end %>
 
-      <%= link_to "show", book_path(@book) class: "show_@book.id" %>
+      <%= link_to "show", book_path(@book.id), class: "show_#{@book.id}" %>
       <%= link_to "back", books_path, class: "back" %>
